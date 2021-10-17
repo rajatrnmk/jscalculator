@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calc.css">
+        <style>
+            body{
+                text-align: center;
+                padding-top: 50px;
+            }
+            #bttn{
+                width:50px;
+                height: 40px;
+                background-color: transparent;
+                border:0px solid;
+                color: white;
+                font-weight: bold;
+
+            }
+            #calc{
+                color: white;
+                height: 100px;
+                background-color: transparent;
+                border:0px solid;
+        
+            }
+            .bbox{
+                
+                color: whitesmoke;
+                background-color: #30302E;
+                background-repeat: no-repeat;
+                width: 259px;
+                height: 300px;
+                text-align: center;
+                justify-content: center;
+                margin: auto;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                
+            }
+            
+            #calc{
+                background-color: #070707;
+                width: 254px;
+                height:200px;
+                margin: auto;
+                border-radius: 30px;
+                
+            }
+            .abox{
+                color: white;
+                background-color: #070707;
+                width: 259px;
+                margin: auto;
+                border-radius: 30px;
+
+            }
+            #bttn1{
+                color:#1AD594 ;
+                width:50px;
+                height: 40px;
+                background-color: transparent;
+                border:0px solid;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            .result{
+                text-align: right;
+                font-size: 30px;
+                outline: none;
+                resize: none;
+
+            }
+            #bttn11{
+                color:#1AD594 ;
+                width:50px;
+                height: 40px;
+                background-color: transparent;
+                border:0px solid;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            
+                
+            
+        </style>
+    </head>
+    <body>
+        <form name="form1">
+            <div class="abox">
+                <input id="calc" type="text" class="result" name = "result" readonly><br><br>
+             <div class="bbox">
+                    <input id ="bttn1" type ="button" value = "c" onclick="clearscreen()">
+                    <input id ="bttn1" type ="button" value = "%"onclick = "liveScreen('%')">
+                    <input id ="bttn11" type ="button" value = "⌫" onclick =>
+                    <input id ="bttn1" type ="button" value = "÷" onclick="liveScreen('/')">
+                    <br><br>
+                <input id ="bttn" type ="button" value = "7" onclick="liveScreen(7)">
+                <input id ="bttn" type ="button" value = "8"onclick ="liveScreen(8)">
+                <input id ="bttn" type ="button" value = "9"onclick = "liveScreen(9)">
+                <input id ="bttn1" type ="button" value = "x"onclick = "liveScreen('*')">
+                <br><br>
+                <input id ="bttn" type = "button" value="4" onclick = "liveScreen(4)">
+                <input id ="bttn" type ="button" value = "5"onclick = "liveScreen(5)">
+                <input id ="bttn" type ="button" value = "6"onclick = "liveScreen(6)">
+                <input id ="bttn1" type ="button" value = "-" onclick="liveScreen('-')">
+                <br><br>
+                <input id ="bttn" type ="button" value = "1"onclick = "liveScreen(1)">
+                <input id ="bttn" type ="button" value = "2"onclick = "liveScreen(2)">
+                <input id ="bttn" type ="button" value = "3"onclick = "liveScreen(3)">
+                <input id ="bttn1" type ="button" value = "+"onclick = "liveScreen('+')">
+                <br><br>
+                <input id ="bttn" type ="button" value = "00"onclick = "liveScreen('00')">
+                <input id ="bttn" type ="button" value = "0" onclick = "liveScreen(0)">
+                <input id ="bttn" type ="button" value = "." onclick = "liveScreen('.')">
+                <input id ="bttn1"type ="button" value = "=" onclick = "result.value =eval(result.value)">
+    
+             </div>
+    
+            </div>
+
+        </form>
+        <script src="script.js"></script>
+
+    </body>
+</html>
